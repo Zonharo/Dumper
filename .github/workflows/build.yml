@@ -29,7 +29,7 @@ jobs:
       run: choco install ninja
 
     - name: Configure CMake
-      run: cmake --preset default
+      run: cmake --preset default -DCMAKE_BUILD_TYPE=Release
 
     - name: Build
       run: cmake --build build --config Release
